@@ -1,30 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Neucha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merienda&family=Neucha&display=swap");
 
 #page-header {
-    background-image: url("../images/header-background.jpg");
-    background-size: cover;
+  background-image: url("../images/header-background.jpg");
+  background-size: cover;
 }
 
 #bear-logo {
-    transform: rotate(-8deg);
+  transform: rotate(-8deg);
+  max-width: 400px;
 }
 
 .section-header {
-    margin-bottom: 5em;
+  margin-bottom: 5em;
 }
 
 h2 {
-    font-family: 'Merienda', cursive;
+  font-family: "Merienda", cursive;
 }
 
 h3 {
-    font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
 }
 
 #main-greeting {
-    font-family: 'Merienda', cursive;
+  font-family: "Merienda", cursive;
 }
 
 #subtitle-greeting {
-    font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
+}
+
+@media screen and (max-width: 768px) {
+  #bear-logo {
+    transform: unset;
+    max-width: 250px;
+  }
 }
