@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Neucha&display=swap');
 
 #page-header {
     background-image: url("../images/header-background.jpg");
@@ -10,4 +11,20 @@
 
 .section-header {
     margin-bottom: 5em;
+}
+
+h2 {
+    font-family: 'Merienda', cursive;
+}
+
+h3 {
+    font-family: 'Neucha', cursive;
+}
+
+#main-greeting {
+    font-family: 'Merienda', cursive;
+}
+
+#subtitle-greeting {
+    font-family: 'Neucha', cursive;
 }

@@ -65,10 +65,10 @@
                 </div>
                 <div class="column is-three-fifths">
                     <div class="container">
-                        <p class="title">
+                        <p id="main-greeting" class="title">
                             Hi, I'm Bear.
                         </p>
-                        <p class="subtitle">
+                        <p id="subtitle-greeting" class="subtitle">
                             I make websites.
                         </p>
                     </div>
@@ -96,8 +96,8 @@
     <section id="about-me" class="section is-medium">
         <div class="container">
             <div class="section-header has-text-centered">
-                <h1 class="title">About Me</h1>
-                <h2 class="subtitle">Get to know the Bear.</h2>
+                <h2 class="title">About Me</h2>
+                <h3 class="subtitle">Get to know the Bear.</h3>
             </div>
             <p>
                 Howdy, the name's Bear. I'm a full-stack web developer, fiction writer, and gaming enthusiast from Ohio. I am currently attending the Ohio State University Digital Bootcamp. In addition to HTML and CSS, I have experience with Apache, Javascript, MySQL, Wordpress, and more. I even have a couple projects in Python and C#. When not working on a project, I can be found weightlifting, exploring a nearby park, or driving houseplants to suicide under the guise of gardening.
@@ -110,12 +110,12 @@
     <section id="work-examples" class="section is-medium">
         <div class="container">
             <div class="section-header has-text-centered">
-                <h1 class="title">Work Examples</h1>
-                <h2 class="subtitle">A curated showcase of previous projects.</h2>
+                <h2 class="title">Work Examples</h2>
+                <h3 class="subtitle">A curated showcase of previous projects.</h3>
             </div>
         </div>
-        <div class="columns">
-            <div class="column">
+        <div class="columns is-multiline is-centered">
+            <div class="column is-one-third">
                 <article class="card">
                     <div class="card-header">
                         <p class="card-header-title">
@@ -123,7 +123,9 @@
                         </p>
                     </div>
                     <div class="card-image">
-                        <img src="assets/images/cards/trivia-night.jpg">
+                        <figure class="image">
+                            <img src="assets/images/cards/trivia-night.jpg">
+                        </figure>
                     </div>
                     <div class="card-content">
                         An app to run an at-home trivia night, with drink suggestions and team scoring.
@@ -134,7 +136,7 @@
                     </div>
                 </article>
             </div>
-            <div class="column">
+            <div class="column is-one-third">
                 <article class="card">
                     <div class="card-header">
                         <p class="card-header-title">
@@ -152,26 +154,8 @@
                         <a class="card-footer-item" href="https://github.com/bear-evans/animal-quiz">Code</a>
                     </div>
                 </article>
-                <article class="card">
-                    <div class="card-header">
-                        <p class="card-header-title">
-                            Weather Forecaster
-                        </p>
-                    </div>
-                    <div class="card-image">
-                        <img src="assets/images/cards/weather-forecaster.jpg">
-                    </div>
-                    <div class="card-content">
-                        An app to show the current weather conditions and a five day forecast of the city you search for.
-                    </div>
-                    <div class="card-footer">
-                        <a class="card-footer-item" href="https://bear-evans.github.io/weather-forecaster/">Preview</a>
-                        <a class="card-footer-item" href="https://github.com/bear-evans/weather-forecaster">Code</a>
-                    </div>
-                </article>
-
             </div>
-            <div class="column">
+            <div class="column is-one-third">
                 <article class="card">
                     <div class="card-header">
                         <p class="card-header-title">
@@ -190,9 +174,44 @@
                     </div>
                 </article>
             </div>
-        </div>
-
-
+            <div class="column is-one-third">
+                <article class="card">
+                    <div class="card-header">
+                        <p class="card-header-title">
+                            Weather Forecaster
+                        </p>
+                    </div>
+                    <div class="card-image">
+                        <img src="assets/images/cards/weather-forecaster.jpg">
+                    </div>
+                    <div class="card-content">
+                        An app to show the current weather conditions and a five day forecast of the city you search for.
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-footer-item" href="https://bear-evans.github.io/weather-forecaster/">Preview</a>
+                        <a class="card-footer-item" href="https://github.com/bear-evans/weather-forecaster">Code</a>
+                    </div>
+                </article>
+            </div>
+            <div class="column is-one-third">
+                <article class="card">
+                    <div class="card-header">
+                        <p class="card-header-title">
+                            Password Generator
+                        </p>
+                    </div>
+                    <div class="card-image">
+                        <img src="assets/images/cards/js-password-generator.jpg">
+                    </div>
+                    <div class="card-content">
+                        A javascript app that generates a strong password based on user input.
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-footer-item" href="https://bear-evans.github.io/js-password-generator/">Preview</a>
+                        <a class="card-footer-item" href="https://github.com/bear-evans/js-password-generator">Code</a>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
     <!-- END PORTFOLIO SECTION -->
