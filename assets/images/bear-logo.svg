@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="59.680328mm"
+   height="58.304855mm"
+   viewBox="0 0 59.680328 58.304855"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="bear-logo.svg">
+  <title
+     id="title1101">Bear Avatar</title>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect998"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect942"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="78.155838"
+     inkscape:cy="115.48517"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     inkscape:window-x="-11"
+     inkscape:window-y="49"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10"
+       originx="-61.280589"
+       originy="-78.860942" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Bear Avatar</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-61.280589,-78.860942)">
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#483737;stroke:#000000;stroke-width:1.55228"
+       id="path1007"
+       sodipodi:sides="8"
+       sodipodi:cx="70.833122"
+       sodipodi:cy="88.413475"
+       sodipodi:r1="8.7124453"
+       sodipodi:r2="8.0492496"
+       sodipodi:arg1="0.78539816"
+       sodipodi:arg2="1.1780972"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 76.993751,94.574104 -6.160629,2.551816 -6.160629,-2.551816 -2.551816,-6.160629 2.551816,-6.160629 6.160629,-2.551816 6.160629,2.551816 2.551817,6.160629 z"
+       inkscape:transform-center-y="-1.4349564e-06" />
+    <path
+       sodipodi:type="star"
+       style="fill:#483737;stroke:#000000;stroke-width:1.55228"
+       id="path1007-1"
+       sodipodi:sides="8"
+       sodipodi:cx="111.40839"
+       sodipodi:cy="88.413475"
+       sodipodi:r1="8.7124453"
+       sodipodi:r2="8.0492496"
+       sodipodi:arg1="0.78539816"
+       sodipodi:arg2="1.1780972"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       inkscape:transform-center-y="-1.4349564e-06"
+       d="m 117.56902,94.574104 -6.16063,2.551816 -6.16063,-2.551816 -2.55182,-6.160629 2.55182,-6.160629 6.16063,-2.551816 6.16063,2.551816 2.55181,6.160629 z" />
+    <path
+       sodipodi:type="star"
+       style="fill:#e9c6af;stroke:#000000;stroke-width:1"
+       id="path1029-3"
+       sodipodi:sides="8"
+       sodipodi:cx="86.056061"
+       sodipodi:cy="114.93325"
+       sodipodi:r1="7.1241241"
+       sodipodi:r2="6.5818329"
+       sodipodi:arg1="1.1902899"
+       sodipodi:arg2="1.582989"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       inkscape:transform-center-y="3.2874076e-06"
+       transform="matrix(0.66360638,-0.01195046,0.0112753,0.62611448,12.526785,18.355088)"
+       d="m 88.701894,121.54783 -5.452163,-0.0665 -3.808253,-3.90227 0.06648,-5.45216 3.90227,-3.80825 5.452163,0.0665 3.808254,3.90227 -0.06648,5.45216 z" />
+    <path
+       sodipodi:type="star"
+       style="fill:#e9c6af;stroke:#000000;stroke-width:1"
+       id="path1029-3-2"
+       sodipodi:sides="8"
+       sodipodi:cx="86.056061"
+       sodipodi:cy="114.93325"
+       sodipodi:r1="7.1241241"
+       sodipodi:r2="6.5818329"
+       sodipodi:arg1="1.1902899"
+       sodipodi:arg2="1.582989"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       inkscape:transform-center-y="3.2874076e-06"
+       transform="matrix(0.66360638,-0.01195046,0.0112753,0.62611448,53.537202,18.355088)"
+       d="m 88.701894,121.54783 -5.452163,-0.0665 -3.808253,-3.90227 0.06648,-5.45216 3.90227,-3.80825 5.452163,0.0665 3.808254,3.90227 -0.06648,5.45216 z" />
+    <path
+       sodipodi:type="star"
+       style="fill:#483737;fill-rule:evenodd;stroke:#000000;stroke-width:2"
+       id="path14"
+       sodipodi:sides="8"
+       sodipodi:cx="91.28125"
+       sodipodi:cy="108.47917"
+       sodipodi:r1="24.321527"
+       sodipodi:r2="22.47016"
+       sodipodi:arg1="0.39060704"
+       sodipodi:arg2="0.78330613"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 113.77083,117.73959 -13.13515,13.19022 -18.614847,0.0389 -13.190224,-13.13515 -0.03894,-18.614855 13.13515,-13.190224 18.614854,-0.03894 13.19022,13.13515 z"
+       inkscape:transform-center-x="1.15e-06"
+       inkscape:transform-center-y="-1.3666666e-06" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 79.110418,101.86458 c 6.614583,0 6.614583,0 6.614583,0"
+       id="path841" />
+    <circle
+       style="fill:#000000;stroke:#000000;stroke-width:1"
+       id="path863"
+       cx="82.417709"
+       cy="103.84895"
+       r="1.984375" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 96.8375,101.86458 c 6.61458,0 6.61458,0 6.61458,0"
+       id="path841-2" />
+    <circle
+       style="fill:#000000;stroke:#000000;stroke-width:1"
+       id="path863-9"
+       cx="100.14478"
+       cy="103.84896"
+       r="1.984375" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#e9c6af;stroke:#000000;stroke-width:1"
+       id="path1029"
+       sodipodi:sides="8"
+       sodipodi:cx="86.056061"
+       sodipodi:cy="114.93325"
+       sodipodi:r1="7.1241241"
+       sodipodi:r2="6.5818329"
+       sodipodi:arg1="1.1902899"
+       sodipodi:arg2="1.582989"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 88.701894,121.54783 -5.452163,-0.0665 -3.808253,-3.90227 0.06648,-5.45216 3.90227,-3.80825 5.452163,0.0665 3.808254,3.90227 -0.06648,5.45216 z"
+       inkscape:transform-center-x="-2.4460322e-06"
+       inkscape:transform-center-y="1.1078504e-05"
+       transform="matrix(1.9134153,-0.03445748,0.03251073,1.8053127,-77.083052,-80.182836)" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#000000;stroke:#000000;stroke-width:0.685994"
+       id="path1035"
+       sodipodi:sides="3"
+       sodipodi:cx="91.28125"
+       sodipodi:cy="-121.70833"
+       sodipodi:r1="5.2916651"
+       sodipodi:r2="2.6458328"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.5707963"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 95.863966,-119.0625 -9.165432,0 L 91.28125,-127 Z"
+       inkscape:transform-center-y="1.3229093"
+       transform="scale(1,-1)"
+       inkscape:transform-center-x="2.0611951e-06" />
+  </g>
+</svg>
