@@ -24,37 +24,27 @@
     <!-- BEGIN HERO HEADER SECTION -->
     <section id="page-header" class="hero is-fullheight">
       <div class="hero-head">
-        <!-- Top Navigation Bar -->
-        <nav class="navbar">
-          <div class="navbar-end">
-            <div id="hero-navbar" class="navbar-menu">
-              <span class="navbar-item">
-                <a class="button" href="mailto:bear-evans@outlook.com">
-                  <span class="icon">
-                    <i class="far fa-envelope"></i>
-                  </span>
-                  <span> Email </span>
-                </a>
-              </span>
-              <span class="navbar-item">
-                <a class="button" href="http://www.linkedin.com/in/bear-evans">
-                  <span class="icon">
-                    <i class="fab fa-linkedin"></i>
-                  </span>
-                  <span> LinkedIn </span>
-                </a>
-              </span>
-              <span class="navbar-item">
-                <a class="button" href="https://github.com/bear-evans/">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span> Github </span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </nav>
+        <!-- Top Links Bar -->
+        <div id="linkbar" class="container is-flex is-pulled-right mr-2 mt-2">
+          <a class="button mx-3" href="mailto:bear-evans@outlook.com">
+            <span class="icon">
+              <i class="far fa-envelope"></i>
+            </span>
+            <span> Email </span>
+          </a>
+          <a class="button mx-3" href="http://www.linkedin.com/in/bear-evans">
+            <span class="icon">
+              <i class="fab fa-linkedin"></i>
+            </span>
+            <span> LinkedIn </span>
+          </a>
+          <a class="button mx-3" href="https://github.com/bear-evans/">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span> Github </span>
+          </a>
+        </div>
       </div>
 
       <!-- Main Header Body -->
@@ -79,12 +69,10 @@
 
       <!-- Bottom Navigation -->
       <div class="hero-foot">
-        <div class="navbar">
-          <div class="navbar-menu">
-            <a class="navbar-item" href="#about-me"> About Me </a>
-            <a class="navbar-item" href="#work-examples"> Work Examples </a>
-            <a class="navbar-item" href="#resume"> Resume </a>
-          </div>
+        <div id="bottom-linkbar" class="container is-flex ml-2 mb-2">
+          <a class="navbar-item" href="#about-me"> About Me </a>
+          <a class="navbar-item" href="#work-examples"> Work Examples </a>
+          <a class="navbar-item" href="#resume"> Resume </a>
         </div>
       </div>
     </section>
@@ -127,6 +115,33 @@
         <div class="column is-one-third">
           <article class="card">
             <div class="card-header">
+              <p class="card-header-title">Bearpress</p>
+            </div>
+            <div class="card-image">
+              <figure class="image">
+                <img src="assets/images/cards/bearpress.jpg" />
+              </figure>
+            </div>
+            <div class="card-content">
+              A light blogging app built in Express.js.
+            </div>
+            <div class="card-footer">
+              <a
+                class="card-footer-item"
+                href="https://bearpress.herokuapp.com/"
+                >Preview</a
+              >
+              <a
+                class="card-footer-item"
+                href="https://github.com/bear-evans/bearpress"
+                >Code</a
+              >
+            </div>
+          </article>
+        </div>
+        <div class="column is-one-third">
+          <article class="card">
+            <div class="card-header">
               <p class="card-header-title">Trivia Night</p>
             </div>
             <div class="card-image">
@@ -155,6 +170,34 @@
         <div class="column is-one-third">
           <article class="card">
             <div class="card-header">
+              <p class="card-header-title">DM Helper</p>
+            </div>
+            <div class="card-image">
+              <figure class="image">
+                <img src="assets/images/cards/dm-helper.jpg" />
+              </figure>
+            </div>
+            <div class="card-content">
+              A helper application for running a Dungeons and Dragons game, with
+              dice rolling and character storage.
+            </div>
+            <div class="card-footer">
+              <a
+                class="card-footer-item"
+                href="https://bear-dm-helper.herokuapp.com/"
+                >Preview</a
+              >
+              <a
+                class="card-footer-item"
+                href="https://github.com/bear-evans/dm-helper"
+                >Code</a
+              >
+            </div>
+          </article>
+        </div>
+        <div class="column is-one-third">
+          <article class="card">
+            <div class="card-header">
               <p class="card-header-title">Bear's Animal Facts</p>
             </div>
             <div class="card-image">
@@ -173,58 +216,6 @@
               <a
                 class="card-footer-item"
                 href="https://github.com/bear-evans/animal-quiz"
-                >Code</a
-              >
-            </div>
-          </article>
-        </div>
-        <div class="column is-one-third">
-          <article class="card">
-            <div class="card-header">
-              <p class="card-header-title">Workday Scheduler</p>
-            </div>
-            <div class="card-image">
-              <img src="assets/images/cards/workday-scheduler.jpg" />
-            </div>
-            <div class="card-content">
-              A simple app to track a day's tasks, with tasks changing color as
-              the day progresses.
-            </div>
-            <div class="card-footer">
-              <a
-                class="card-footer-item"
-                href="https://bear-evans.github.io/workday-scheduler/"
-                >Preview</a
-              >
-              <a
-                class="card-footer-item"
-                href="https://github.com/bear-evans/workday-scheduler"
-                >Code</a
-              >
-            </div>
-          </article>
-        </div>
-        <div class="column is-one-third">
-          <article class="card">
-            <div class="card-header">
-              <p class="card-header-title">Weather Forecaster</p>
-            </div>
-            <div class="card-image">
-              <img src="assets/images/cards/weather-forecaster.jpg" />
-            </div>
-            <div class="card-content">
-              An app to show the current weather conditions and a five day
-              forecast of the city you search for.
-            </div>
-            <div class="card-footer">
-              <a
-                class="card-footer-item"
-                href="https://bear-evans.github.io/weather-forecaster/"
-                >Preview</a
-              >
-              <a
-                class="card-footer-item"
-                href="https://github.com/bear-evans/weather-forecaster"
                 >Code</a
               >
             </div>
