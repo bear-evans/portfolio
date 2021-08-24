@@ -1,48 +1,52 @@
+/* =============================================
+Imports and Variables
+============================================= */
 @import url("https://fonts.googleapis.com/css2?family=Merienda&family=Neucha&display=swap");
 
+:root {
+  --dark-bg: rgb(14, 15, 14);
+}
+
+/* =============================================
+Universal CSS
+============================================= */
 body {
-  font-size: 16px;
+  background-color: var(--dark-bg);
 }
 
-#page-header {
-  background-image: url("../images/header-background.jpg");
+/* =============================================
+Header CSS
+============================================= */
+#top-branch {
+  background-image: url("../images/decoration/top-right-branch.png");
   background-size: cover;
+  position: absolute;
+  width: 650px;
+  height: 437px;
+  right: 0;
+  top: 0;
 }
 
-#bear-logo {
-  transform: rotate(-8deg);
-  max-width: 400px;
+#header-container {
+  height: 75vh;
 }
 
-.section-header {
-  margin-bottom: 5em;
+#bottom-branch {
+  background-image: url("../images/decoration/left-branch.png");
+  position: absolute;
+  left: 0;
+  top: 75vh;
+  width: 600px;
+  height: 390px;
 }
 
-h2 {
-  font-family: "Merienda", cursive;
-}
-
-h3 {
-  font-family: "Neucha", cursive;
-}
-
-#main-greeting {
-  font-family: "Merienda", cursive;
-}
-
-#subtitle-greeting {
-  font-family: "Neucha", cursive;
-}
-
+/* =============================================
+Media Query Breakpoints
+============================================= */
 @media screen and (max-width: 768px) {
-  #bear-logo {
-    transform: unset;
-    max-width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #header-content {
-    text-align: center;
+  /* Hide unnecessary decoration on smaller screens */
+  #top-branch,
+  #bottom-branch {
+    display: none;
   }
 }
