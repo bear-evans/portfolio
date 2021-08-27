@@ -1,19 +1,44 @@
 /* =============================================
 Imports and Variables
 ============================================= */
-@import url("https://fonts.googleapis.com/css2?family=Merienda&family=Neucha&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&family=Special+Elite&display=swap");
 :root {
-  --dark-bg: rgb(14, 15, 14);
+  --dark-brown: rgb(14, 15, 14);
+  --light-brown: rgb(255, 240, 228);
+  --muted-text: rgb(85, 82, 79);
+  --big-header-font: "Fredericka the Great", cursive;
+  --small-header-font: "Special Elite", monospace;
 }
 
 /* =============================================
 Universal CSS
 ============================================= */
 body {
-  background-color: var(--dark-bg);
+  background-color: var(--dark-brown);
+  color: var(--light-brown);
+  display: flex;
+  flex-direction: column;
 }
 
+h2 {
+  font-family: var(--big-header-font);
+  font-size: 4em;
+  font-weight: lighter;
+  text-align: right;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+p {
+  font-family: var(--small-header-font);
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-indent: 5em;
+  font-weight: lighter;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
 /* =============================================
 Header CSS
 ============================================= */
@@ -22,24 +47,108 @@ Header CSS
   background-size: cover;
   position: absolute;
   width: 650px;
+  max-width: 25vw;
   height: 437px;
   right: 0;
   top: 0;
+  z-index: -1;
 }
 
 #header-container {
   height: 75vh;
+  width: 100%;
+}
+
+#header-text-container {
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 75vh;
+}
+
+#header-text {
+  margin-left: 5vw;
+  color: var(--light-brown);
+}
+
+#header-text h1 {
+  font-size: clamp(100%, 1rem + 10vw, 15em);
+  font-family: var(--big-header-font);
+  font-weight: lighter;
+}
+
+#subheader-text {
+  position: absolute;
+  right: 4em;
+  transform: rotate(8deg);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  color: var(--dark-brown);
+  background-color: var(--muted-text);
+  font-size: clamp(100%, 0.5rem + 4vw, 4em);
+  font-family: var(--small-header-font);
 }
 
 #bottom-branch {
   background-image: url("../images/decoration/left-branch.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
-  left: 0;
-  top: 75vh;
+  top: 40vh;
   width: 600px;
+  max-width: 45vw;
   height: 390px;
+  z-index: -1;
+}
+/* =============================================
+Navigation CSS
+============================================= */
+#header-navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  text-align: center;
 }
 
+#header-navigation a {
+  padding: 1em;
+  font-family: var(--small-header-font);
+  font-size: large;
+  text-decoration: none;
+  /* border: 1px solid var(--muted-text); */
+  color: var(--light-brown);
+  width: 150px;
+  z-index: 5;
+}
+
+#header-navigation a:hover {
+  color: var(--light-brown);
+  background-color: var(--muted-text);
+}
+
+.active-link {
+  color: var(--dark-brown);
+  background-color: var(--muted-text);
+}
+/* =============================================
+Main CSS
+============================================= */
+#main-content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  width: 100%;
+  max-width: 1280px;
+}
 /* =============================================
 Media Query Breakpoints
 ============================================= */
@@ -48,5 +157,27 @@ Media Query Breakpoints
   #top-branch,
   #bottom-branch {
     display: none;
+  }
+
+  #header-container,
+  #header-text-container {
+    height: unset;
+  }
+
+  #header-text {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #subheader-text {
+    position: relative;
+    right: 0;
+    transform: unset;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    text-align: center;
   }
 }
