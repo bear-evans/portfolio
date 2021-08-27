@@ -1,13 +1,13 @@
 /* =============================================
 Imports and Variables
 ============================================= */
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&family=Special+Elite&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&family=Special+Elite&display=swap');
 :root {
   --dark-brown: rgb(14, 15, 14);
   --light-brown: rgb(255, 240, 228);
   --muted-text: rgb(85, 82, 79);
-  --big-header-font: "Fredericka the Great", cursive;
-  --small-header-font: "Special Elite", monospace;
+  --big-header-font: 'Fredericka the Great', cursive;
+  --small-header-font: 'Special Elite', monospace;
 }
 
 /* =============================================
@@ -43,7 +43,7 @@ p {
 Header CSS
 ============================================= */
 #top-branch {
-  background-image: url("../images/decoration/top-right-branch.png");
+  background-image: url('../images/decoration/top-right-branch.png');
   background-size: cover;
   position: absolute;
   width: 650px;
@@ -55,7 +55,7 @@ Header CSS
 }
 
 #header-container {
-  height: 75vh;
+  height: clamp(800px, 75vh, 1100px);
   width: 100%;
 }
 
@@ -65,7 +65,7 @@ Header CSS
   max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
-  height: 75vh;
+  height: clamp(800px, 75vh, 1100px);
 }
 
 #header-text {
@@ -94,11 +94,11 @@ Header CSS
 }
 
 #bottom-branch {
-  background-image: url("../images/decoration/left-branch.png");
+  background-image: url('../images/decoration/left-branch.png');
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: 40vh;
+  top: clamp(550px, 40vh, 600px);
   width: 600px;
   max-width: 45vw;
   height: 390px;
