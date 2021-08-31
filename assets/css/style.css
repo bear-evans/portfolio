@@ -1,13 +1,13 @@
 /* =============================================
 Imports and Variables
 ============================================= */
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&family=Special+Elite&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&family=Special+Elite&display=swap");
 :root {
   --dark-brown: rgb(14, 15, 14);
   --light-brown: rgb(255, 240, 228);
   --muted-text: rgb(85, 82, 79);
-  --big-header-font: 'Fredericka the Great', cursive;
-  --small-header-font: 'Special Elite', monospace;
+  --big-header-font: "Fredericka the Great", cursive;
+  --small-header-font: "Special Elite", monospace;
 }
 
 /* =============================================
@@ -39,11 +39,21 @@ p {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
+
+.button {
+  padding: 0.5em 2em 0.5em 2em;
+  color: var(--light-brown);
+  font-size: 1.5em;
+  text-decoration: none;
+  border: 2px solid var(--light-brown);
+  border-radius: 3px;
+}
+
 /* =============================================
 Header CSS
 ============================================= */
 #top-branch {
-  background-image: url('../images/decoration/top-right-branch.png');
+  background-image: url("../images/decoration/top-right-branch.png");
   background-size: cover;
   position: absolute;
   width: 650px;
@@ -94,7 +104,7 @@ Header CSS
 }
 
 #bottom-branch {
-  background-image: url('../images/decoration/left-branch.png');
+  background-image: url("../images/decoration/left-branch.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -148,6 +158,14 @@ Main CSS
   margin-top: 2em;
   width: 100%;
   max-width: 1280px;
+}
+/* =============================================
+Contact CSS
+============================================= */
+#contact-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 /* =============================================
 Media Query Breakpoints
