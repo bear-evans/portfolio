@@ -42,7 +42,7 @@ p {
 
 .button {
   padding: 0.5em 2em 0.5em 2em;
-  margin: 0em 0.2em 0em 0.2em;
+  margin: 0.1em 0.2em 0.1em 0.2em;
   border: 2px solid var(--light-brown);
   border-radius: 3px;
   color: var(--light-brown);
@@ -60,21 +60,13 @@ p {
 /* =============================================
 Header CSS
 ============================================= */
-#top-branch {
-  background-image: url("../images/decoration/top-right-branch.png");
-  background-size: cover;
-  position: absolute;
-  width: 650px;
-  max-width: 25vw;
-  height: 437px;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
 #header-container {
-  height: clamp(800px, 75vh, 1100px);
+  /* height: clamp(800px, 75vh, 1100px); */
   width: 100%;
+  background-image: url("../images/decoration/top-right-branch.png"),
+    url("../images/decoration/left-branch.png");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
 }
 
 #header-text-container {
@@ -83,7 +75,7 @@ Header CSS
   max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
-  height: clamp(800px, 75vh, 1100px);
+  /* height: clamp(800px, 75vh, 1100px); */
 }
 
 #header-text {
@@ -91,37 +83,30 @@ Header CSS
   color: var(--light-brown);
 }
 
-#header-text h1 {
+h1 {
   font-size: clamp(100%, 1rem + 10vw, 15em);
   font-family: var(--big-header-font);
   font-weight: lighter;
 }
 
 #subheader-text {
-  position: absolute;
-  right: 4em;
-  transform: rotate(8deg);
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
-  color: var(--dark-brown);
-  background-color: var(--muted-text);
-  font-size: clamp(100%, 0.5rem + 4vw, 4em);
-  font-family: var(--small-header-font);
+  display: block;
+  text-align: right;
+  margin-bottom: 2em;
 }
 
-#bottom-branch {
-  background-image: url("../images/decoration/left-branch.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: clamp(550px, 40vh, 600px);
-  width: 600px;
-  max-width: 45vw;
-  height: 390px;
-  z-index: -1;
+#subheader-text p {
+  display: inline-block;
+  padding: 0.4em 1em 0.4em 1em;
+  margin-right: 2em;
+  font-size: clamp(100%, 0.5rem + 4vw, 4em);
+  font-family: var(--small-header-font);
+  color: var(--dark-brown);
+  background-color: var(--muted-text);
+  transform: rotate(8deg);
+  text-indent: 0;
 }
+
 /* =============================================
 Navigation CSS
 ============================================= */
@@ -169,7 +154,12 @@ Contact CSS
 #contact-buttons {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+#contact-buttons .button {
+  width: 3em;
 }
 
 #gmail-button:hover {
@@ -204,6 +194,7 @@ Media Query Breakpoints
   #header-container,
   #header-text-container {
     height: unset;
+    background: none;
   }
 
   #header-text {
@@ -215,12 +206,16 @@ Media Query Breakpoints
 
   #subheader-text {
     position: relative;
-    right: 0;
-    transform: unset;
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 2em;
     text-align: center;
+  }
+
+  #subheader-text p {
+    display: block;
+    transform: unset;
+    margin: unset;
   }
 
   /* Remove hover effect as mobile rarely uses it */
