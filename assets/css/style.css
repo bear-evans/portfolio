@@ -3,34 +3,95 @@ Imports and Variables
 ============================================= */
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&family=Special+Elite&display=swap");
 :root {
-  --dark-brown: rgb(14, 15, 14);
+  --dark-brown: rgb(0, 0, 0);
   --light-brown: rgb(255, 240, 228);
   --muted-text: rgb(85, 82, 79);
   --big-header-font: "Fredericka the Great", cursive;
   --small-header-font: "Special Elite", monospace;
+  --main-body-font: "Special Elite", monospace;
 }
 
+@keyframes color-change {
+  0% {
+    background-position: 50% 0%;
+  }
+  20% {
+    background-position: 20% 20%;
+  }
+  40% {
+    background-position: 70% 20%;
+  }
+  60% {
+    background-position: 20% 50%;
+  }
+  80% {
+    background-position: 90% 80%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+@-webkit-keyframes color-change {
+  0% {
+    background-position: 50% 0%;
+  }
+  20% {
+    background-position: 20% 20%;
+  }
+  40% {
+    background-position: -20% 20%;
+  }
+  60% {
+    background-position: -100% 50%;
+  }
+  80% {
+    background-position: 90% 80%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@-moz-keyframes color-change {
+  0% {
+    background-position: 50% 0%;
+  }
+  20% {
+    background-position: 20% 20%;
+  }
+  40% {
+    background-position: -20% 20%;
+  }
+  60% {
+    background-position: -100% 50%;
+  }
+  80% {
+    background-position: 90% 80%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
 /* =============================================
 Universal CSS
 ============================================= */
 body {
   background-color: var(--dark-brown);
   color: var(--light-brown);
+  font-family: var(--main-body-font);
   display: flex;
   flex-direction: column;
 }
 
 h2 {
+  color: var(--light-brown);
   font-family: var(--big-header-font);
   font-size: 4em;
   font-weight: lighter;
   text-align: center;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
 }
 
 p {
-  font-family: var(--small-header-font);
   font-size: 1.5em;
   line-height: 1.5;
   text-indent: 5em;
@@ -41,7 +102,7 @@ p {
 }
 
 .button {
-  padding: 0.5em 2em 0.5em 2em;
+  padding: 0.5em 1em 0.5em 1em;
   margin: 0.1em 0.2em 0.1em 0.2em;
   border: 2px solid var(--light-brown);
   border-radius: 3px;
@@ -181,6 +242,15 @@ Contact CSS
   color: var(--light-brown);
   background-color: rgb(2, 172, 25);
 }
+
+/* =============================================
+Footer CSS
+============================================= */
+#page-footer {
+  margin: 2em 0em 1.5em 0em;
+  text-align: center;
+}
+
 /* =============================================
 Media Query Breakpoints
 ============================================= */
