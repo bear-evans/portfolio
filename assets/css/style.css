@@ -23,6 +23,10 @@ body {
 }
 
 h2 {
+  background-image: url("../images/decoration/grunge-header-backdrop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--light-brown);
   font-family: var(--big-header-font);
   font-size: 4em;
@@ -251,6 +255,10 @@ Footer CSS
   text-align: center;
   padding: 2em;
   font-family: var(--small-header-font);
+}
+
+#page-footer a {
+  color: gray;
 }
 
 /* =============================================
