@@ -1,48 +1,331 @@
-@import url("https://fonts.googleapis.com/css2?family=Merienda&family=Neucha&display=swap");
+/* =============================================
+Imports and Variables
+============================================= */
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&family=Special+Elite&display=swap");
+:root {
+  --dark-brown: rgb(0, 0, 0);
+  --light-brown: rgb(255, 240, 228);
+  --muted-text: rgb(85, 82, 79);
+  --big-header-font: "Fredericka the Great", cursive;
+  --small-header-font: "Special Elite", monospace;
+  --main-body-font: "Special Elite", monospace;
+}
 
+/* =============================================
+Universal CSS
+============================================= */
 body {
-  font-size: 16px;
-}
-
-#page-header {
-  background-image: url("../images/header-background.jpg");
-  background-size: cover;
-}
-
-#bear-logo {
-  transform: rotate(-8deg);
-  max-width: 400px;
-}
-
-.section-header {
-  margin-bottom: 5em;
+  background-color: var(--dark-brown);
+  color: var(--light-brown);
+  font-family: var(--main-body-font);
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
-  font-family: "Merienda", cursive;
+  background-image: url("../images/decoration/grunge-header-backdrop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--light-brown);
+  font-family: var(--big-header-font);
+  font-size: 4em;
+  font-weight: lighter;
+  text-align: center;
 }
 
 h3 {
-  font-family: "Neucha", cursive;
+  font-family: var(--big-header-font);
+  text-align: center;
+  font-size: 2em;
 }
 
-#main-greeting {
-  font-family: "Merienda", cursive;
+p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-indent: 5em;
+  font-weight: lighter;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
-#subtitle-greeting {
-  font-family: "Neucha", cursive;
+.button {
+  padding: 0.5em 1em 0.5em 1em;
+  margin: 0.1em 0.2em 0.1em 0.2em;
+  border: 2px solid var(--light-brown);
+  border-radius: 3px;
+  color: var(--light-brown);
+  font-size: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s;
 }
 
+.button:hover {
+  color: var(--dark-brown);
+  background-color: var(--light-brown);
+}
+
+/* =============================================
+Header CSS
+============================================= */
+#header-container {
+  /* height: clamp(800px, 75vh, 1100px); */
+  width: 100%;
+  background-image: url("../images/decoration/top-right-branch.png"),
+    url("../images/decoration/left-branch.png");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+}
+
+#header-text-container {
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+  /* height: clamp(800px, 75vh, 1100px); */
+}
+
+#header-text {
+  margin-left: 5vw;
+  color: var(--light-brown);
+}
+
+h1 {
+  font-size: clamp(100%, 1rem + 10vw, 15em);
+  font-family: var(--big-header-font);
+  font-weight: lighter;
+}
+
+#subheader-text {
+  display: block;
+  text-align: right;
+  margin-bottom: 2em;
+}
+
+#subheader-text p {
+  display: inline-block;
+  padding: 0.4em 1em 0.4em 1em;
+  margin-right: 2em;
+  font-size: clamp(100%, 0.5rem + 4vw, 4em);
+  font-family: var(--small-header-font);
+  color: var(--dark-brown);
+  background-color: var(--muted-text);
+  transform: rotate(8deg);
+  text-indent: 0;
+}
+
+/* =============================================
+Navigation CSS
+============================================= */
+#header-navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  text-align: center;
+}
+
+#header-navigation a {
+  padding: 1em;
+  font-family: var(--main-body-font);
+  font-size: large;
+  text-decoration: none;
+  /* border: 1px solid var(--muted-text); */
+  color: var(--light-brown);
+  width: 150px;
+  z-index: 5;
+  transition: all 0.2s;
+}
+
+#header-navigation a:hover {
+  border-bottom: 0.1em solid var(--light-brown);
+}
+
+/* =============================================
+Main CSS
+============================================= */
+#main-content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  width: 100%;
+  max-width: 1280px;
+}
+
+#project-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(15, 15, 15);
+  padding: 0.25em;
+  margin-top: 1em;
+}
+.project-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card-text h3 {
+  border-bottom: 1px solid white;
+}
+
+.project-card-text p {
+  text-indent: 0;
+  font-size: 1em;
+}
+
+.project-card-thumbnail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em;
+  width: 60%;
+}
+
+.project-card-thumbnail img {
+  border: 1px solid white;
+  padding: 0.25em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.field-header {
+  font-weight: bold;
+}
+
+.project-card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: auto;
+  padding-bottom: 1em;
+}
+
+/* =============================================
+Contact CSS
+============================================= */
+#contact-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#contact-buttons .button {
+  width: 6em;
+}
+
+#gmail-button:hover {
+  color: var(--light-brown);
+  background-color: rgb(227, 65, 51);
+}
+
+#linkedin-button:hover {
+  color: var(--light-brown);
+  background-color: rgb(0, 119, 181);
+}
+
+#github-button:hover {
+  color: var(--light-brown);
+  background-color: rgb(143, 50, 172);
+}
+
+#resume-button:hover {
+  color: var(--light-brown);
+  background-color: rgb(2, 172, 25);
+}
+
+/* =============================================
+Footer CSS
+============================================= */
+#page-footer {
+  text-align: center;
+  padding: 2em;
+  font-family: var(--small-header-font);
+}
+
+#page-footer a {
+  color: gray;
+}
+
+/* =============================================
+Media Query Breakpoints
+============================================= */
 @media screen and (max-width: 768px) {
-  #bear-logo {
-    transform: unset;
-    max-width: 250px;
+  /* Hide unnecessary decoration on smaller screens */
+  #top-branch,
+  #bottom-branch {
+    display: none;
+  }
+
+  #header-container,
+  #header-text-container {
+    height: unset;
+    background: none;
+  }
+
+  #header-text {
+    width: 100%;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
 
-  #header-content {
+  #subheader-text {
+    position: relative;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
     text-align: center;
+  }
+
+  #subheader-text p {
+    display: block;
+    transform: unset;
+    margin: unset;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-card-thumbnail {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  /* Remove hover effect as mobile rarely uses it */
+  #gmail-button {
+    color: var(--light-brown);
+    background-color: rgb(227, 65, 51);
+  }
+
+  #linkedin-button {
+    color: var(--light-brown);
+    background-color: rgb(0, 119, 181);
+  }
+
+  #github-button {
+    color: var(--light-brown);
+    background-color: rgb(143, 50, 172);
+  }
+
+  #resume-button {
+    color: var(--light-brown);
+    background-color: rgb(2, 172, 25);
   }
 }
