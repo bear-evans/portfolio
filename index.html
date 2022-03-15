@@ -10,6 +10,11 @@
     ></script>
     <link href="./assets/css/style.css" rel="stylesheet" />
     <script src="./assets/js/script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
     <title>Bear Evans</title>
   </head>
   <body>
@@ -22,247 +27,24 @@
           '-\__Y__/-'
              `---`
     -->
-    <header id="header-container">
-      <div id="header-text-container">
-        <div id="header-text"><h1>Hi, I'm Bear.</h1></div>
-        <div id="subheader-text"><p>I make websites.</p></div>
+
+    <div id="sidebar-bg"></div>
+    <section class="resume-section">
+      <div class="sidebar">
+        <img src="./assets/images/BearEvansPhoto.png" id="profile-photo" />
       </div>
-    </header>
-
-    <!-- NAVIGATION MENU -->
-    <nav>
-      <div id="header-navigation">
-        <a href="#about">About</a>
-        <a href="https://bear-evans.hashnode.dev/">Blog</a>
-        <a href="#projects">Projects</a>
-        <!-- <a href="./tools.html">Tools</a> Under Construction! -->
-        <a href="#contact">Contact</a>
+      <div class="content">
+        <div id="name">
+          <span class="first-name">Bear </span>
+          <span class="last-name">Evans</span>
+        </div>
       </div>
-    </nav>
-
-    <!-- MAIN CONTENT WRAPPER -->
-    <main id="main-content">
-      <!-- ABOUT SECTION -->
-      <section id="about">
-        <h2>About Bear</h2>
-        <p>
-          Howdy, the name's Bear. I'm a full-stack web developer recently
-          graduated and earned a Certificate from the Ohio State University
-          Digital Bootcamp. I have skill with HTML, CSS, Javascript, React.js,
-          and more, and my background in factory and food service work gives me
-          a well-honed talent for working efficiently with a team-first mindset.
-          A hobbyist coder and resident tech expert since I was a child, I have
-          a knack for teaching myself the necessary skills to solve a problem. I
-          set up my first Apache server in my living room at the age of 13, and
-          ever since I have wanted to make the internet a place where everyone
-          has a home. When designing an application, user comfort and enjoyment
-          is my top priority.
-        </p>
-        <p>
-          When I'm not coding, I can be found weightlifting, home brewing beers
-          and ciders, or driving houseplants to suicide under the guise of
-          gardening.
-        </p>
-      </section>
-
-      <!-- PROJECT LIST -->
-      <section id="projects">
-        <h2>Bear-Built Applications</h2>
-        <p>Below is a curated list of some of Bear's favorite projects.</p>
-
-        <div id="project-list">
-          <!-- Begin Trivia Night Card -->
-          <article class="project-card">
-            <div class="project-card-thumbnail">
-              <img
-                src="./assets/images/cards/trivia-night.jpg"
-                alt="Screenshot of trivia app"
-              />
-            </div>
-            <div class="project-card-text">
-              <h3>Trivia Night</h3>
-              <p>
-                <span class="field-header">Role:</span> Engineer of Game Logic
-              </p>
-              <p>
-                <span class="field-header">Technologies Used:</span> HTML5,
-                CSS3, Javascript, jQuery
-              </p>
-              <p>
-                An app for hosting an at-home trivia night, with drinks
-                suggested.
-              </p>
-              <div class="project-card-buttons">
-                <a
-                  class="button"
-                  href="https://bear-evans.github.io/trivia-night/"
-                  >Demo</a
-                >
-                <a
-                  class="button"
-                  href="https://github.com/bear-evans/trivia-night"
-                  >Github</a
-                >
-              </div>
-            </div>
-          </article>
-          <!-- End Trivia Night Card -->
-
-          <!-- Begin Bearpress Card -->
-          <article class="project-card">
-            <div class="project-card-thumbnail">
-              <img
-                src="./assets/images/cards/bearpress.jpg"
-                alt="Screenshot of bearpress app"
-              />
-            </div>
-            <div class="project-card-text">
-              <h3>Bearpress</h3>
-              <p><span class="field-header">Role:</span> Lead Developer</p>
-              <p>
-                <span class="field-header">Technologies Used:</span> HTML5,
-                CSS3, Javascript, jQuery, Handlebars, MySQL
-              </p>
-              <p>
-                A light blogging platform, supporting multiple users and
-                commenting.
-              </p>
-              <div class="project-card-buttons">
-                <a class="button" href="https://bearpress.herokuapp.com/"
-                  >Demo</a
-                >
-                <a class="button" href="https://github.com/bear-evans/bearpress"
-                  >Github</a
-                >
-              </div>
-            </div>
-          </article>
-          <!-- End Bearpress Card -->
-
-          <!-- Begin Grizzly Employee Management Card -->
-          <article class="project-card">
-            <div class="project-card-thumbnail">
-              <img
-                src="./assets/images/cards/grizzly-employee-management.jpg"
-                alt="Screenshot of GEM app"
-              />
-            </div>
-            <div class="project-card-text">
-              <h3>Grizzly Employee Management</h3>
-              <p><span class="field-header">Role:</span> Lead Developer</p>
-              <p>
-                <span class="field-header">Technologies Used:</span> Node.js,
-                Express.js, MySQL
-              </p>
-              <p>
-                An application for managing a database of employees and
-                departments.
-              </p>
-              <div class="project-card-buttons">
-                <a
-                  class="button"
-                  href="https://www.youtube.com/watch?v=nw3FMzSCv24"
-                  >Demo</a
-                >
-                <a
-                  class="button"
-                  href="https://github.com/bear-evans/employee-management-system"
-                  >Github</a
-                >
-              </div>
-            </div>
-          </article>
-          <!-- End Grizzly Employee Management Card -->
-
-          <!-- Begin Animal Quiz Card -->
-          <article class="project-card">
-            <div class="project-card-thumbnail">
-              <img
-                src="./assets/images/cards/animal-quiz.jpg"
-                alt="Screenshot of Bear's Animal Facts app"
-              />
-            </div>
-            <div class="project-card-text">
-              <h3>Bear's Animal Facts</h3>
-              <p><span class="field-header">Role:</span> Lead Developer</p>
-              <p>
-                <span class="field-header">Technologies Used:</span> HTML5,
-                CSS3, Javascript
-              </p>
-              <p>
-                A light-hearted timed quiz of random animal facts, with
-                scoreboards.
-              </p>
-              <div class="project-card-buttons">
-                <a
-                  class="button"
-                  href="https://bear-evans.github.io/animal-quiz/"
-                  >Demo</a
-                >
-                <a
-                  class="button"
-                  href="https://github.com/bear-evans/animal-quiz"
-                  >Github</a
-                >
-              </div>
-            </div>
-          </article>
-          <!-- End Grizzly Employee Management Card -->
-        </div>
-      </section>
-
-      <!-- CONTACT BUTTON SECTION -->
-      <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>Want to hire Bear or work with him on a project? Get in touch!</p>
-        <div id="contact-buttons">
-          <a
-            id="gmail-button"
-            class="button"
-            href="mailto:bear-evans@outlook.com"
-          >
-            <span class="icon">
-              <i class="far fa-envelope"></i>
-            </span>
-            <span> Email </span>
-          </a>
-          <a
-            id="linkedin-button"
-            class="button"
-            href="http://www.linkedin.com/in/bear-evans"
-          >
-            <span class="icon">
-              <i class="fab fa-linkedin"></i>
-            </span>
-            <span> LinkedIn </span>
-          </a>
-          <a
-            id="github-button"
-            class="button"
-            href="https://github.com/bear-evans/"
-          >
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-            <span> Github </span>
-          </a>
-          <a id="resume-button" class="button" href="./assets/Resume.pdf">
-            <span class="icon">
-              <i class="far fa-file-pdf"></i>
-            </span>
-            <span> Resume </span>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER SECTION -->
-    <footer id="page-footer">
-      Hand-Coded by Bear Evans © 2021
-      <br />
-      <a href="https://www.freepik.com/vectors/brush"
-        >Brush vector created by milano83 - www.freepik.com</a
-      >
-    </footer>
+    </section>
+    <section id="links-bar">
+      <a><i class="fa-brands fa-github"></i> Github</a>
+      <a><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <a><i class="fa-solid fa-file-pdf"></i> Resume</a>
+      <a><i class="fa-solid fa-envelope"></i> Email</a>
+    </section>
   </body>
 </html>
